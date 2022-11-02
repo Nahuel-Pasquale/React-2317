@@ -1,0 +1,32 @@
+.accordion{
+  width: 600px;
+  box-shadow: rgba(0,0,0,0.8) 0px 5px 15px 0px;
+}
+
+.accordionTitleContainer {
+  width: 100%;
+  background-color: #131415;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.accordionTitle {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0px 30px;
+}
+
+.icon{
+  color: white;
+  font-size: 1.2rem;
+  padding: 0px 30px;
+}
+
+.accordionContent {
+  padding: 0px 30px;
+  color: grey;
+  font-size: 1.2rem;
+}

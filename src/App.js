@@ -1,10 +1,7 @@
 import './App.css';
 import { ExampleFunct } from './components/clase-02/ExampleFunct';
-import { StyledAccordeon } from './components/clase-03/StyledAccordeon';
-// import { CssAccordeon } from './components/clase-03/CssAccordeon';
-import { data } from './utils/data';
+import { Formulario } from './components/clase-04/Formulario';
 import { GlobalStyles } from './globalStyles/GlobalStyles';
-import { Accordeon } from './components/clase-03/Accordeon';
 
 
 
@@ -13,9 +10,8 @@ function App() {
     <>
       <ExampleFunct />
 
-      {/* <CssAccordeon items={data} /> */}
-      <StyledAccordeon items={data} />
-      <Accordeon />
+      <Formulario />
+
       <GlobalStyles />
     </>
   );

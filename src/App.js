@@ -1,6 +1,8 @@
 import './App.css';
-import { ExampleFunct } from './components/clase-02/ExampleFunct';
-import { Formulario } from './components/clase-04/Formulario';
+import { GeneralWrapper } from './components/clase-05/GeneralWrapper';
+import { CtxProvider } from './components/clase-05/MiContexto';
+import { Reducer } from './components/clase-05/Reducer';
+import { SmallWrapper } from './components/clase-05/SmallWrapper';
 import { GlobalStyles } from './globalStyles/GlobalStyles';
 
 
@@ -8,9 +10,14 @@ import { GlobalStyles } from './globalStyles/GlobalStyles';
 function App() {
   return (
     <>
-      <ExampleFunct />
+      <CtxProvider>
+        <GeneralWrapper>
+          <SmallWrapper>
+            <Reducer />
+          </SmallWrapper>
+        </GeneralWrapper>
+      </CtxProvider>
 
-      <Formulario />
 
       <GlobalStyles />
     </>

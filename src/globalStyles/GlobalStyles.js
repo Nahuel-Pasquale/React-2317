@@ -1,26 +1,17 @@
 import { createGlobalStyle } from "styled-components";
 
+const GlobalStyle = createGlobalStyle`
+    body {
+        margin: 0;
+        user-select: none;
+        background-color: #191919;
+        font-family: 'Poppins', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+`;
 
-export const GlobalStyles = createGlobalStyle`
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-}
-body{
-  /* width: 100%; */
-  background-color: #131415;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-:root{
-  --black: #000;
-}
-
-`
+export default GlobalStyle;

@@ -1,24 +1,18 @@
 import './App.css';
-import { GeneralWrapper } from './components/clase-05/GeneralWrapper';
-import { CtxProvider } from './components/clase-05/MiContexto';
-import { Reducer } from './components/clase-05/Reducer';
-import { SmallWrapper } from './components/clase-05/SmallWrapper';
-import { GlobalStyles } from './globalStyles/GlobalStyles';
+import  GlobalStyles  from './globalStyles/GlobalStyles';
+import Logo from './components/clase-06/logo/Logo';
+import { Counter } from './components/clase-06/counter/Counter';
+import { CountContextProvider } from './components/clase-06/context/CountContext';
 
 
 
 function App() {
   return (
     <>
-      <CtxProvider>
-        <GeneralWrapper>
-          <SmallWrapper>
-            <Reducer />
-          </SmallWrapper>
-        </GeneralWrapper>
-      </CtxProvider>
-
-
+      <CountContextProvider>
+        <Counter />
+      </CountContextProvider>
+      <Logo />
       <GlobalStyles />
     </>
   );
